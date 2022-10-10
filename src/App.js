@@ -110,8 +110,7 @@ const App = ({ sections }) => {
   }, [sections, getProductData]);
 
   const _updateInternCapacity = useCallback((value, item, productTypeData) => {
-    console.log(productTypeData);
-    // console.log({ value, item, productTypeData: productTypeData.sectionCapacity })
+    console.log({ value, item, productTypeData });
   }, []);
 
   // this is only used for the new optimized component
@@ -126,13 +125,13 @@ const App = ({ sections }) => {
     setProductData(copy);
   };
 
-  // const productData = getProductData(sections)
-  // console.log('productData', productData)
-  // console.log('stateData', stateData)
-  // console.log('isequal', isEqual(productData, stateData))
-
   return (
     <div className="App">
+      <div>
+        <span>
+          The goal is to optimize and refactor an existing code / component.
+        </span>
+      </div>
       {/* ----- old production planning section ----- */}
       <div>
         <h4>ProductionPlanningSectionInfos</h4>
